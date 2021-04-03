@@ -1,5 +1,5 @@
 name: hello world
 description: |
    cattle demo hello world
-version: 0
+version: v0.0.1
 category: CATTLE
