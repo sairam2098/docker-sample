@@ -1,0 +1,16 @@
+version: '2'
+services:
+  helloworld:
+    image: vdasari2098/helloworld
+    stdin_open: true
+    tty: true
+    labels:
+      io.rancher.container.pull_image: always
+  helloworld-lb:
+    image: rancher/lb-service-haproxy:v0.9.14
+    ports:
+    - 33680:33680/tcp
+    labels:
+      io.rancher.container.agent.role: environmentAdmin,agent
+      io.rancher.container.agent_service.drain_provider: 'true'
+      io.rancher.container.create_agent: 'true'
