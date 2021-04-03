@@ -1,5 +1,5 @@
-name: hello world
+name: cattle-demo
 description: |
-   cattle demo hello world
+  demo of cattle
 version: v0.0.1
-category: CATTLE
+category: Blogging

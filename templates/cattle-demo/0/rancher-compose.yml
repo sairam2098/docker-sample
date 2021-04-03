@@ -1,4 +1,8 @@
 version: '2'
+catalog:
+  name: "cattle-demo"
+  version: "v0.0.1"
+  description: "demo of cattle"
 services:
   helloworld:
     scale: 2
